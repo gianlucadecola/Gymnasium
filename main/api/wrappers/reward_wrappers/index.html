@@ -14,8 +14,8 @@
     <link rel="shortcut icon" href="../../../_static/favicon.png"/><meta name="generator" content="sphinx-5.3.0, furo 2022.09.15.dev1"/>
         <title>Reward Wrappers - Gymnasium Documentation</title>
       <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/styles/furo.css?digest=685fa18242db31520d31c3a9d25d30ba22d0f107" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/styles/furo-extensions.css?digest=403a31844f8e23b4c27a66e8d07df595b970be09" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/styles/furo.css?digest=3cf7b839e8c50b5f3a39bb99d90baa7b845de926" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/styles/furo-extensions.css?digest=24b18ece81cb9ff18679a2945b9c89ba44829d18" />
     
     
 
@@ -44,7 +44,30 @@
   <body>
     <header class="farama-header" aria-label="Farama header">
       <div class="farama-header__container">
-        <div class="farama-header__left">
+        <div class="farama-header__left--mobile">
+          <label class="nav-overlay-icon" for="__navigation">
+            <div class="visually-hidden">Toggle site navigation sidebar</div>
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <defs></defs>
+              <line x1="0.5" y1="4" x2="23.5" y2="4"></line>
+              <line x1="0.232" y1="12" x2="23.5" y2="12"></line>
+              <line x1="0.232" y1="20" x2="23.5" y2="20"></line>
+            </svg>
+            <!-- <svg viewBox="0 0 24 24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <line x1="0.5" y1="4.5" x2="23.5" y2="4.5" style="fill: none; "></line>
+              <line x1="0.5" y1="12" x2="14" y2="12" ></line>
+              <line x1="0.5" y1="19.5" x2="23.5" y2="19.5"></line>
+              <polyline style="stroke-width: 0px;" points="17 7 22 12 17 17"></polyline>
+            </svg> -->
+            <!-- <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" style="width:20px">
+              <defs></defs>
+              <rect y="1" width="22" height="22" rx="2" ry="2" style="fill: none;" x="1"></rect>
+              <line x1="8" y1="1" x2="8" y2="23"></line>
+              <polyline style="stroke-linecap: round; fill: none; stroke-linejoin: round;" points="13 7 17 12 13 17"></polyline>
+            </svg> -->
+          </label>
+        </div>
+        <div class="farama-header__left farama-header__center--mobile">
           <a href="../../../">
               <img class="farama-header__logo only-light" src="../../../_static/img/gymnasium_black.svg" alt="Light Logo"/>
               <img class="farama-header__logo only-dark" src="../../../_static/img/gymnasium_white.svg" alt="Dark Logo"/>
@@ -54,20 +77,15 @@
         <div class="farama-header__right">
           <div class="farama-header-menu">
             <button class="farama-header-menu__btn" aria-label="Open Farama Menu" aria-expanded="false" aria-haspopup="true" aria-controls="farama-menu">
-              <span class="farama-header-menu__btn-name">
-                Farama Foundation
-              </span>
-              <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
-                  <defs></defs>
-                  <path d="M 3 4.677 C 3 3.751 3.659 3 4.474 3 L 27.526 3 C 28.341 3 29 3.751 29 4.677 C 29 5.603 28.341 6.354 27.526 6.354 L 4.474 6.354 C 3.659 6.354 3 5.603 3 4.677 Z" bx:origin="0.622825 3.875593"></path>
-                  <path d="M 3 16 C 3 15.074 3.659 14.323 4.474 14.323 L 27.526 14.323 C 28.341 14.323 29 15.074 29 16 C 29 16.926 28.341 17.677 27.526 17.677 L 4.474 17.677 C 3.659 17.677 3 16.926 3 16 Z" bx:origin="0.622825 0.5"></path>
-                  <path d="M 3 27.323 C 3 26.397 3.659 25.646 4.474 25.646 L 27.526 25.646 C 28.341 25.646 29 26.397 29 27.323 C 29 28.249 28.341 29 27.526 29 L 4.474 29 C 3.659 29 3 28.249 3 27.323 Z" bx:origin="0.622825 -2.875591"></path>
+              <img class="farama-white-logo-invert" src="../../../_static/img/farama-logo-header.svg">
+              <svg viewBox="0 0 24 24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <polyline style="stroke-linecap: round; stroke-linejoin: round; fill: none; stroke-width: 2px;" points="1 7 12 18 23 7"></polyline>
               </svg>
             </button>
-            <div class="farama-header-menu-container" aria-hidden="true" id="farama-menu">
+            <div class="farama-header-menu-container farama-hidden" aria-hidden="true" id="farama-menu">
               <div class="farama-header-menu__header">
                 <a href="https://farama.org">
-                  <img class="farama-header-menu__logo" src="../../../_static/img/farama_solid_white.svg" alt="Farama Foundation logo">
+                  <img class="farama-header-menu__logo farama-white-logo-invert" src="../../../_static/img/farama_solid_white.svg" alt="Farama Foundation logo">
                   <span>Farama Foundation</span>
                 </a>
                 <div class="farama-header-menu-header__right">
@@ -168,7 +186,7 @@
 
 
 <div class="page">
-  <header class="mobile-header">
+   <!--<header class="mobile-header">
     <div class="header-left">
       <label class="nav-overlay-icon" for="__navigation">
         <div class="visually-hidden">Toggle site navigation sidebar</div>
@@ -192,7 +210,7 @@
         <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
       </label>
     </div>
-  </header>
+  </header>-->
   <aside class="sidebar-drawer">
     <div class="sidebar-container">
       
@@ -348,11 +366,35 @@
 <li class="toctree-l1"><a class="reference internal" href="../../../tutorials/blackjack_tutorial/">Solving Blackjack with Q-Learning</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../tutorials/environment_creation/">Make your own custom environment</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../tutorials/handling_time_limits/">Handling Time Limits</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../tutorials/implementing_custom_wrappers/">Implementing Custom Wrappers</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../tutorials/reinforce_invpend_gym_v26/">Training using REINFORCE for Mujoco</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../tutorials/vector_envs_tutorial/">Training A2C with Vector Envs and Domain Randomization</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Development</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference external" href="https://github.com/Farama-Foundation/Gymnasium">Github</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../content/release_notes/">Release Notes</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" role="switch" type="checkbox"/><label for="toctree-checkbox-9"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../release_notes/gymnasium_v0.27.0/">v0.27.0 Release Notes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../release_notes/gymnasium_v0.26.3/">v0.26.3 Release Notes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../release_notes/gymnasium_v0.26.2/">v0.26.2 Release Notes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../release_notes/gymnasium_v0.26.1/">v0.26.1 Release Notes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../release_notes/gymnasium_v0.26.0/">Gymnasium v0.26.0 Release Notes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../release_notes/gym_v0.26.2/">v0.26.2 Release Notes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../release_notes/gym_v0.26.1/">v0.26.1 Release Notes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../release_notes/gym_v0.26.0/">v0.26.0 Release Notes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../release_notes/gym_v0.25.2/">v0.25.2 Release Notes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../release_notes/gym_v0.25.1/">0.25.1 Release Notes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../release_notes/gym_v0.25.0/">v0.25.0 Release notes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../release_notes/gym_v0.24.1/">v0.24.1 Release Notes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../release_notes/gym_v0.24.0/">v0.24.0 Release Notes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../release_notes/gym_v0.23.1/">v0.23.1 Release Notes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../release_notes/gym_v0.23.0/">v0.23.0 Release Notes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../release_notes/gym_v0.22.0/">v0.22 Release Notes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../release_notes/gym_v0.21.0/">v0.21.0 Release Notes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../release_notes/gym_v0.20.0/">v0.20.0 Release Notes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../release_notes/gym_v0.19.0/">v0.19.0 Release Notes</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference external" href="https://github.com/Farama-Foundation/Gymnasium/blob/main/docs/README.md">Contribute to the Docs</a></li>
 </ul>
 
@@ -401,35 +443,21 @@
           
           <section id="reward-wrappers">
 <h1>Reward Wrappers<a class="headerlink" href="#reward-wrappers" title="Permalink to this heading">#</a></h1>
-<section id="reward-wrapper">
-<h2>Reward Wrapper<a class="headerlink" href="#reward-wrapper" title="Permalink to this heading">#</a></h2>
+<section id="base-class">
+<h2>Base Class<a class="headerlink" href="#base-class" title="Permalink to this heading">#</a></h2>
 <dl class="py class">
 <dt class="sig sig-object py" id="gymnasium.RewardWrapper">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">gymnasium.</span></span><span class="sig-name descname"><span class="pre">RewardWrapper</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">env</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../../env/#gymnasium.Env" title="gymnasium.core.Env"><span class="pre">Env</span></a><span class="p"><span class="pre">[</span></span><span class="pre">ObsType</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">ActType</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#gymnasium.RewardWrapper" title="Permalink to this definition">#</a></dt>
 <dd><p>Superclass of wrappers that can modify the returning reward from a step.</p>
 <p>If you would like to apply a function to the reward that is returned by the base environment before
 passing it to learning code, you can simply inherit from <a class="reference internal" href="#gymnasium.RewardWrapper" title="gymnasium.RewardWrapper"><code class="xref py py-class docutils literal notranslate"><span class="pre">RewardWrapper</span></code></a> and overwrite the method
-<code class="xref py py-meth docutils literal notranslate"><span class="pre">reward()</span></code> to implement that transformation.
+<a class="reference internal" href="#gymnasium.RewardWrapper.reward" title="gymnasium.RewardWrapper.reward"><code class="xref py py-meth docutils literal notranslate"><span class="pre">reward()</span></code></a> to implement that transformation.
 This transformation might change the <code class="xref py py-attr docutils literal notranslate"><span class="pre">reward_range</span></code>; to specify the <code class="xref py py-attr docutils literal notranslate"><span class="pre">reward_range</span></code> of your wrapper,
 you can simply define <code class="xref py py-attr docutils literal notranslate"><span class="pre">self.reward_range</span></code> in <code class="xref py py-meth docutils literal notranslate"><span class="pre">__init__()</span></code>.</p>
-<p>Let us look at an example: Sometimes (especially when we do not have control over the reward
-because it is intrinsic), we want to clip the reward to a range to gain some numerical stability.
-To do that, we could, for instance, implement the following wrapper:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">ClipReward</span><span class="p">(</span><span class="n">gym</span><span class="o">.</span><span class="n">RewardWrapper</span><span class="p">):</span>
-    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">env</span><span class="p">,</span> <span class="n">min_reward</span><span class="p">,</span> <span class="n">max_reward</span><span class="p">):</span>
-        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">env</span><span class="p">)</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">min_reward</span> <span class="o">=</span> <span class="n">min_reward</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">max_reward</span> <span class="o">=</span> <span class="n">max_reward</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">reward_range</span> <span class="o">=</span> <span class="p">(</span><span class="n">min_reward</span><span class="p">,</span> <span class="n">max_reward</span><span class="p">)</span>
-
-    <span class="k">def</span> <span class="nf">reward</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">r</span><span class="p">:</span> <span class="n">SupportsFloat</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">SupportsFloat</span><span class="p">:</span>
-        <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">clip</span><span class="p">(</span><span class="n">r</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">min_reward</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">max_reward</span><span class="p">)</span>
-</pre></div>
-</div>
 <p>Constructor for the Reward wrapper.</p>
-<dl class="py function">
-<dt class="sig sig-object py" id="gymnasium.RewardWrapper.RewardWrapper.reward">
-<span class="sig-name descname"><span class="pre">reward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">reward</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SupportsFloat</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">SupportsFloat</span></span></span><a class="headerlink" href="#gymnasium.RewardWrapper.RewardWrapper.reward" title="Permalink to this definition">#</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="gymnasium.RewardWrapper.reward">
+<span class="sig-name descname"><span class="pre">reward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">reward</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SupportsFloat</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">SupportsFloat</span></span></span><a class="headerlink" href="#gymnasium.RewardWrapper.reward" title="Permalink to this definition">#</a></dt>
 <dd><p>Returns a modified environment <code class="docutils literal notranslate"><span class="pre">reward</span></code>.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -444,8 +472,8 @@ To do that, we could, for instance, implement the following wrapper:</p>
 </dd></dl>
 
 </section>
-<section id="transform-reward">
-<h2>Transform Reward<a class="headerlink" href="#transform-reward" title="Permalink to this heading">#</a></h2>
+<section id="available-reward-wrappers">
+<h2>Available Reward Wrappers<a class="headerlink" href="#available-reward-wrappers" title="Permalink to this heading">#</a></h2>
 <dl class="py class">
 <dt class="sig sig-object py" id="gymnasium.wrappers.TransformReward">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">gymnasium.wrappers.</span></span><span class="sig-name descname"><span class="pre">TransformReward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">env</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../../env/#gymnasium.Env" title="gymnasium.core.Env"><span class="pre">Env</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">f</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#gymnasium.wrappers.TransformReward" title="Permalink to this definition">#</a></dt>
@@ -475,9 +503,6 @@ To do that, we could, for instance, implement the following wrapper:</p>
 </dl>
 </dd></dl>
 
-</section>
-<section id="normalize-reward">
-<h2>Normalize Reward<a class="headerlink" href="#normalize-reward" title="Permalink to this heading">#</a></h2>
 <dl class="py class">
 <dt class="sig sig-object py" id="gymnasium.wrappers.NormalizeReward">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">gymnasium.wrappers.</span></span><span class="sig-name descname"><span class="pre">NormalizeReward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">env</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../../env/#gymnasium.Env" title="gymnasium.core.Env"><span class="pre">Env</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">gamma</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0.99</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">epsilon</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1e-8</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#gymnasium.wrappers.NormalizeReward" title="Permalink to this definition">#</a></dt>
@@ -562,16 +587,15 @@ instantiated or the policy was changed recently.</p>
           <div class="toc-tree">
             <ul>
 <li><a class="reference internal" href="#">Reward Wrappers</a><ul>
-<li><a class="reference internal" href="#reward-wrapper">Reward Wrapper</a><ul>
-<li><a class="reference internal" href="#gymnasium.RewardWrapper"><code class="docutils literal notranslate"><span class="pre">RewardWrapper</span></code></a></li>
-<li><a class="reference internal" href="#gymnasium.RewardWrapper.RewardWrapper.reward"><code class="docutils literal notranslate"><span class="pre">RewardWrapper.reward()</span></code></a></li>
+<li><a class="reference internal" href="#base-class">Base Class</a><ul>
+<li><a class="reference internal" href="#gymnasium.RewardWrapper"><code class="docutils literal notranslate"><span class="pre">RewardWrapper</span></code></a><ul>
+<li><a class="reference internal" href="#gymnasium.RewardWrapper.reward"><code class="docutils literal notranslate"><span class="pre">RewardWrapper.reward()</span></code></a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#transform-reward">Transform Reward</a><ul>
+</ul>
+</li>
+<li><a class="reference internal" href="#available-reward-wrappers">Available Reward Wrappers</a><ul>
 <li><a class="reference internal" href="#gymnasium.wrappers.TransformReward"><code class="docutils literal notranslate"><span class="pre">TransformReward</span></code></a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#normalize-reward">Normalize Reward</a><ul>
 <li><a class="reference internal" href="#gymnasium.wrappers.NormalizeReward"><code class="docutils literal notranslate"><span class="pre">NormalizeReward</span></code></a></li>
 </ul>
 </li>
@@ -740,7 +764,8 @@ instantiated or the policy was changed recently.</p>
               const imgElem = Object.assign(document.createElement("img"),
                 {
                   src: project.image ? imagesBasepath + project.image : imagesBasepath + "/farama_black.svg",
-                  alt: `${project.name} logo`
+                  alt: `${project.name} logo`,
+                  className: "farama-black-logo-invert"
                 }
               );
               aElem.appendChild(imgElem);
